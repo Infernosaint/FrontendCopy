@@ -80,7 +80,7 @@
                             <a href="./editReservation?reservationno=${reservationno}" ><button class="btn btn-info" type="button">Edit booking <i class="fa fa-pencil" aria-hidden="true"></i></button></a>
                             <form method="post" style="display:inline-block">
                                 <input name="reservationno" hidden value="${reservationno}">
-                                <button type="submit"class="btn btn-danger">Cancel booking <i class="fa fa-ban" aria-hidden="true"></i></button>
+                                <button type="submit"class="btn btn-danger">Delete reservation <i class="fa fa-ban" aria-hidden="true"></i></button>
                             </form>
                         </span>
                         <a href="./"><button class="btn btn-info" type="button">Back to Home <i class="fa fa-home" aria-hidden="true"></i></button></a>

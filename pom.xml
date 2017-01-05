@@ -68,6 +68,17 @@
             <version>1.0-20161207.102335-19</version>
             <type>jar</type>
         </dependency>
+        <dependency>
+            <groupId>B</groupId>
+            <artifactId>FerryProjectContract</artifactId>
+            <version>1.0-20170104.194359-9</version>
+        </dependency>
+        <dependency>
+    <groupId>B</groupId>
+    <artifactId>FerryBackend</artifactId>
+    <version>1.0-20170105.054902-1</version>
+</dependency>
+
     </dependencies>  
     
     <build>

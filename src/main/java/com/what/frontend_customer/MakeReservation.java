@@ -2,11 +2,13 @@ package com.what.frontend_customer;
 
 import backendMock.DummyCustomerBackend;
 import com.google.gson.Gson;
+import control.FerryMaster;
 import generalstuff.DepartureIdentifier;
 import generalstuff.LineSummary;
 import generalstuff.ReservationDetail;
 import generalstuff.ReservationIdentifier;
 import generalstuff.ReservationSummary;
+import interfaces.CustomerInterface;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Collection;
@@ -21,7 +23,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "MakeReservation", urlPatterns = {"/MakeReservation"})
 public class MakeReservation extends HttpServlet {
 
-    DummyCustomerBackend mock = new DummyCustomerBackend();
+    CustomerInterface mock = new FerryMaster();
     Gson gson = new Gson();
 
 //  request to get Lines and render the page
@@ -56,7 +58,7 @@ public class MakeReservation extends HttpServlet {
             hasSmallCar = false;
         }
 
-        rd = mock.saveReservation(di, nonResidentsNb, residentsNb, hasSmallCar, heavyMachineryNb, lorriesNb, customerName);
+        rd = mock.saveReservation(di, nonResidentsNb, residentsNb, smallCarsNb, heavyMachineryNb, lorriesNb, customerName);
         if (rd instanceof ReservationDetail) {
             System.out.println(rd.getId());
 //            request.setAttribute("success", "Your reservation has been successfully saved!");

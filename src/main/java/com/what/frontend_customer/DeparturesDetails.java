@@ -2,9 +2,11 @@ package com.what.frontend_customer;
 
 import backendMock.DummyCustomerBackend;
 import com.google.gson.Gson;
+import control.FerryMaster;
 import dtos_for_website.DepartureDetailsDTO;
 import generalstuff.DepartureDetail;
 import generalstuff.LineIdentifier;
+import interfaces.CustomerInterface;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -19,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "DeparturesDetails", urlPatterns = {"/DeparturesDetails"})
 public class DeparturesDetails extends HttpServlet {
 
-    DummyCustomerBackend mock = new DummyCustomerBackend();
+    CustomerInterface mock = new FerryMaster();
     Gson gson = new Gson();
 
 //  request to get departure details

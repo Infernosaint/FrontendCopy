@@ -1,6 +1,7 @@
 package com.what.frontend_customer;
 
 import backendMock.DummyCustomerBackend;
+import control.FerryMaster;
 import generalstuff.*;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -17,7 +18,7 @@ public class MyReservation extends HttpServlet {
     CustomerInterface mock;
 
     public MyReservation() {
-        mock = new DummyCustomerBackend();
+        mock = new FerryMaster();
     }
 
     public MyReservation(CustomerInterface backend) {
