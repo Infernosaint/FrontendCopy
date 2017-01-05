@@ -21,6 +21,7 @@
         <script type="text/javascript" id="linesDetailsJSON" data-info=${linesDetails}></script>
     </head>
     <body>
+        <div id="JSONDATA"></div>
         <div id="background">
             <div class="container">
                 <div class="col-md-12">

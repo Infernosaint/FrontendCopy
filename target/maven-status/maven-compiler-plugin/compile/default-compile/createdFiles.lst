@@ -8,3 +8,4 @@ com\what\frontend_customer\DeparturesDetails.class
 com\what\frontend_customer\MyReservation.class
 com\what\frontend_customer\to_delete\ReservationDetailListManagement.class
 com\what\frontend_customer\to_delete\ReservationSummaryListManagement.class
+com\what\frontend_customer\EditReservation.class

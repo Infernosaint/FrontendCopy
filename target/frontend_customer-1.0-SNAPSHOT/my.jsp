@@ -77,7 +77,7 @@
                 <div class="formOnImage col-md-12">
                     <div class="pull-right">
                         <span ${hidden}>
-                            <a href="./editReservation?reservationno=${reservationno}" ><button class="btn btn-info" type="button">Edit booking <i class="fa fa-pencil" aria-hidden="true"></i></button></a>
+                            <a href="./editReservation.jsp?reservationno=${reservationno}" ><button class="btn btn-info" type="button">Edit booking <i class="fa fa-pencil" aria-hidden="true"></i></button></a>
                             <form method="post" style="display:inline-block">
                                 <input name="reservationno" hidden value="${reservationno}">
                                 <button type="submit"class="btn btn-danger">Delete reservation <i class="fa fa-ban" aria-hidden="true"></i></button>

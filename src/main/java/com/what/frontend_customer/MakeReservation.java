@@ -46,13 +46,14 @@ public class MakeReservation extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ReservationDetail rd;
-        DepartureIdentifier di = new DepartureIdentifier(Integer.parseInt(request.getParameter("departureId")));
+        
         int residentsNb = Integer.parseInt(request.getParameter("residentsNbInput"));
         int nonResidentsNb = Integer.parseInt(request.getParameter("nonResidentsNbInput"));
         int smallCarsNb = Integer.parseInt(request.getParameter("smallCarsNbInput"));
         int heavyMachineryNb = Integer.parseInt(request.getParameter("heavyMachineryNbInput"));
         int lorriesNb = Integer.parseInt(request.getParameter("lorriesNbInput"));
         String customerName = request.getParameter("customerName");
+        DepartureIdentifier di = new DepartureIdentifier(Integer.parseInt(request.getParameter("departureId")));
         Boolean hasSmallCar = true;
         if (smallCarsNb == 0) {
             hasSmallCar = false;
