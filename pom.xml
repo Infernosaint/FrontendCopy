@@ -74,10 +74,11 @@
             <version>1.0-20170104.194359-9</version>
         </dependency>
         <dependency>
-    <groupId>B</groupId>
-    <artifactId>FerryBackend</artifactId>
-    <version>1.0-20170105.054902-1</version>
-</dependency>
+            <groupId>B</groupId>
+            <artifactId>FerryBackend</artifactId>
+            <version>1.0-20170105.092936-2</version>
+        </dependency>
+
 
     </dependencies>  
     
